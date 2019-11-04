@@ -3,6 +3,7 @@ tree module using rank and select modules implemented in
 the other directories. Here are the instructions as to how
 to build a wavelet tree and execute rank and select on it.
 
+* make sure to `chmod +x wt` to make wt executable
 
 1. To build a wavelet tree, we run:
 
