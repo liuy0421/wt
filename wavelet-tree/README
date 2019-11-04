@@ -1,0 +1,48 @@
+This directory contains Yuelin's implementation of wavelet
+tree module using rank and select modules implemented in 
+the other directories. Here are the instructions as to how
+to build a wavelet tree and execute rank and select on it.
+
+
+1. To build a wavelet tree, we run:
+
+    ./wt build <input string file> <output file>
+
+   where <input string file> is the path to a file containing
+   the input string, and <output file> specifies where you 
+   want the serialized wavelet tree object to be saved.
+
+2. To access a character in the input string, run:
+
+    ./wt access <saved wt> <access indices>
+
+   where <saved wt> is the path to the serialized wavelet tree
+   object, and <access indices> contains one index one'd like
+   to access per line.
+
+3. To count the occurrence of a character upto an index, run:
+
+    ./wt rank <saved wt> <rank queries>
+
+   where <saved wt> is the path to the serialized wavelet tree
+   object, and <rank queries> contains one query per line, with 
+   the character and the index separated by a tab character.
+
+4. To get the index of the nth occurrence of a character, run:
+
+    ./wt select <saved wt> <select queries>
+
+   where <saved wt> is the path to the serialized wavelet tree
+   object, and <select queries> contains one query per line, with 
+   the character and the index separated by a tab character.
+
+
+One can run the following commands in order for a simple test:
+
+   ./wt build ../utils/input.txt wt.pickle
+
+   ./wt access wt.pickle ../utils/access_queries.txt
+
+   ./wt rank wt.pickle ../utils/rank_select_queries.txt
+
+   ./wt select wt.pickle ../utils/rank_select_queries.txt

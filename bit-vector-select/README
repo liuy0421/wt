@@ -1,0 +1,7 @@
+This directory contains Yuelin's implementation of 
+class `select_support`. It is not intended to be used
+as a standalone program. 
+
+Running `python3 bvrank.py` will output a small 
+example of expected behavior of the module's `select1`,
+`select0`, and `overhead` on a sample imput.

@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if [ "$1" = "build" ]
+then 
+	python3 build.py "$2" "$3"
+else
+	python3 rank_select.py "$1" "$2" "$3"
+fi

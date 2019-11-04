@@ -1,0 +1,12 @@
+This is Yuelin's implementation for HW1
+
+This repository contains 4 directories:
+- bit-vector-rank
+- bit-vector-select
+- wavelet-tree, and
+- utils
+
+The first 3 directories contain implementations to the 3 parts
+in this homework assignment. The utils directory contains helper
+code to measure python object size in bytes (by Raymond Hettinger),
+and sample inputs one can use to test the wavelet tree.
